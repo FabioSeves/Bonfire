@@ -1,0 +1,22 @@
+function sumFibs(num) {
+  var fib = [1,1];
+  var i = 2;
+  var arr=[];
+ while(i<num){
+  fib[i]=fib[i-1]+fib[i-2] ;
+i++;
+
+}
+for(i = 0; i<fib.length; i++){
+if(fib[i]%2 !== 0 && fib[i] <= num){
+arr.push(fib[i]);
+}
+}
+console.log(arr);
+  
+  var novoArr = arr.reduce(function(a,b){
+return a+b;});
+return novoArr;
+}
+
+sumFibs(4);
