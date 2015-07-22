@@ -1,0 +1,17 @@
+function spinalCase(str) {
+  function upperToHyphenLower(match) {
+    return  "-" + match.toLowerCase();
+  }
+  var novaStr= str.replace(/\s+/g, '-').replace(/_/g, "-");
+   var novaStr1 =novaStr.replace(/[A-Z]/g, upperToHyphenLower);
+  for(var i= 0; i<novaStr1.length; i++){
+    if(novaStr1.substring(0,1)==="-"){
+      return novaStr1.slice(1, novaStr1.length).replace(/-+/g, "-");
+    }
+  }//"It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  
+  return novaStr1;
+}
+
+spinalCase('This Is Spinal Tap');
