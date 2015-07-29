@@ -1,0 +1,18 @@
+function orbitalPeriod(arr) {
+  var GM = 398600.4418;
+  var earthRadius = 6367.4447;
+  for(var i = 0 ; i < arr.length; i++){
+   
+    var sum = earthRadius + arr[i].avgAlt;
+    var semi = Math.pow(sum, 3);
+    var period = 2 * Math.PI  * Math.pow(semi/GM, 0.5);
+     var Obj ={};
+    Obj.name = arr[i].name;
+    
+    Obj.orbitalPeriod = Math.round(period);
+    arr[i] = Obj;
+  }
+  return arr;
+}
+
+orbitalPeriod([{name : "sputkin", avgAlt : 35873.5553}]);
