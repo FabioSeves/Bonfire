@@ -1,0 +1,6 @@
+function reverseString(str) {
+  novaStr= str.split('').reverse().join('');
+  return novaStr;
+} 
+
+reverseString('hello');
