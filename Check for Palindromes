@@ -1,0 +1,10 @@
+function palindrome(str) {
+  var novaStr = str.split('').reverse().join('').replace(/ |,|\./g,"");
+  if(novaStr.toLowerCase() === str.split('').join('').replace(/ |,|\./g,"").toLowerCase()){// Good luck!
+  return true;
+} else{
+  return false;
+}
+}
+
+palindrome("eye");
