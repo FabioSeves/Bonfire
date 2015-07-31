@@ -1,0 +1,13 @@
+function repeat(str, num) {
+var novaStr="";
+  if(num >=0){
+ return str.repeat(num);
+} else if (num <= -1){
+  return novaStr;
+} else{
+  return false;
+}
+
+}
+
+repeat('abc', 3);
