@@ -1,0 +1,17 @@
+function diff(arr1, arr2) {
+  var newArr = [];
+   arr1.forEach(function(numero){
+    if(arr2.indexOf(numero)=== -1){
+      newArr.push(numero);
+    }
+  });
+   arr2.forEach(function(numero){
+    if(arr1.indexOf(numero)=== -1){
+      newArr.push(numero);
+    }
+  });
+  // Same, same; but different.
+  return newArr;
+}
+
+diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
