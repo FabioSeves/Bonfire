@@ -1,0 +1,9 @@
+function destroyer(arr, a, b) {
+  var novoArr= arr.filter(function(c){
+    if(c !== a && c !== b){
+      return a;
+    }});// Remove all the values
+  return novoArr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
