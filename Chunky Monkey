@@ -1,0 +1,13 @@
+function chunk(arr, size) {
+ var novoArr=[];
+  while(arr.length > size){
+    novoArr.push(arr.splice(0,size));
+  } if(arr.length){
+    novoArr.push(arr);
+    return novoArr;
+  }
+  // Break it up.
+  
+}
+
+chunk(['a', 'b', 'c', 'd'], 2);
