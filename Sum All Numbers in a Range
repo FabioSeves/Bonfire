@@ -1,0 +1,11 @@
+function sumAll(arr) {
+  var soma=0;
+  var a =Math.max(arr[0], arr[1]);
+  var b =Math.min(arr[0], arr[1]);
+  
+  for(var i =b; i<=a; i++){
+    soma +=i;
+  } return soma;
+}
+
+sumAll([1, 4]);
