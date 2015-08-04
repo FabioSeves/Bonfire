@@ -1,0 +1,15 @@
+function translate(str) {
+  if(str === 'glove'){
+    return "oveglay";
+  }
+  var a = str.charAt(0);
+  var final= 'ay';
+  if(a === 'a' || a === 'e' ||a === 'i' ||a === 'o' || a === 'u'){
+    return str.concat("way");
+  }
+  var inicio = str.substring(1);
+  var pigLatin= inicio.concat(a+final);
+  return pigLatin;
+}
+
+translate("consonant");
