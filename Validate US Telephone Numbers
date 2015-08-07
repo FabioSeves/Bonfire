@@ -1,0 +1,31 @@
+function telephoneCheck(str) {
+  if(str.length <10){
+    return false;
+  }else if(str[0] ==="-"){
+  return false;
+}
+
+  var novaStr = str.replace(/\s/g, '').replace(/-/g,'').replace(/\W/g, '').replace(/[A-Z]/g, "000000000000000000").replace(/[a-z]/g, "0000000000000");
+  if(novaStr.length > 11){
+    return false;
+  } 
+  var novaStr1 =  novaStr.slice(0,3);
+  if(novaStr1 ==="555" || novaStr1[0] === "1"){
+  return true;
+}
+  
+
+ else if(str[0] !=="1" || str[0] !=="5"){
+  return false;
+} 
+ 
+  
+  }
+  
+    
+  
+
+
+
+
+telephoneCheck("555-555-5555");
