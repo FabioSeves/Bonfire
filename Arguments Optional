@@ -1,0 +1,28 @@
+function add() {  
+  var argumento1 = arguments[0];
+  var argumento2 = arguments[1];
+   if(!argumento2 && typeof argumento1 === "number" ){
+    var sum = function(argumento){
+      if(typeof argumento === "number"){
+      return argumento1 + argumento;
+      }
+      
+    }; 
+     return sum;
+   }
+  if(typeof argumento1 === "number" && typeof argumento2 === "number"){
+    return argumento1 + argumento2;
+  } 
+  else{
+    return undefined;
+  }
+  
+    
+  } 
+  
+    
+  
+
+
+
+add(2,3);
