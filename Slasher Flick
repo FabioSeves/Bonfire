@@ -4,7 +4,7 @@ function slasher(arr, howMany) {
     arr.splice(0,howMany);
   } else if(arr.length <= howMany){
     arr.splice(0,arr.length);
-  }// it doesn't always pay to be first
+  }
   return arr;
 }
 
